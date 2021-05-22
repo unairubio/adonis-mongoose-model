@@ -265,8 +265,8 @@ class BaseModel {
    * @memberof BaseModel
    * @returns {String}
    */
-  get primaryKey () {
-    return this.constructor.primaryKey
+  static get primaryKey () {
+    return this.constructor.primaryKey || 'id'
   }
 
   /**
